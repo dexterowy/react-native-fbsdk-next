@@ -45,6 +45,7 @@ RCT_EXPORT_METHOD(setDataProcessingOptions:(nullable NSArray<NSString *> *)optio
 
 RCT_EXPORT_METHOD(initializeSDK)
 {
+  [FBSDKSettings setAutoLogAppEventsEnabled:YES];
   [FBSDKApplicationDelegate.sharedInstance initializeSDK];
 }
 

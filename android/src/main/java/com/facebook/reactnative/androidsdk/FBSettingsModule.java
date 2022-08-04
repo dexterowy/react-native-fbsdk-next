@@ -52,6 +52,7 @@ public class FBSettingsModule extends BaseJavaModule {
      */
     @ReactMethod
     public static void initializeSDK() {
+        FacebookSdk.setAutoInitEnabled(true)
         FacebookSdk.fullyInitialize();
     }
 
